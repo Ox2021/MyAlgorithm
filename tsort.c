@@ -2,19 +2,21 @@
 #include<stdio.h>
 int main()
 {
-	int a[11] = { 0 };
+	int arr[1000] = { 0 };
+	int n = 0;
 	int i = 0;
-	int j = 0;
 
-	for (i = 0; i < 5; i++)
+	scanf("%d", &n);
+	for (i = 0; i < n; i++)
 	{
 		int t = 0;
 		scanf("%d", &t);
-		a[t]++;
+		arr[t]++;
 	}
-	for (i = 10; i >= 0; i--)
+	for (i = 999; i >= 0; i--)
 	{
-		for (j = 1; j <= a[i]; j++)
+		int j = 0;
+		for (j = 1; j <= arr[i]; j++)
 		{
 			printf("%d ", i);
 		}
